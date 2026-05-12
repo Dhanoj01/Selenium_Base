@@ -25,8 +25,7 @@ public class HandleCheckboxes {
 
         // Total number of checkboxes
         List<WebElement> TotalCheckBox = driver.findElements(
-                By.xpath("//input[@class='form-check-input' and @type='checkbox']"));
-
+        By.xpath("//input[@class='form-check-input' and @type='checkbox']"));
         System.out.println("Total number of Checkboxes : " + TotalCheckBox.size());
 
         // Select all checkboxes
