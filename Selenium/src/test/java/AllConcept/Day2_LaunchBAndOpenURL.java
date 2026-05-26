@@ -3,7 +3,7 @@ package AllConcept;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class LaunchBAndOpenURL {
+public class Day2_LaunchBAndOpenURL {
 
 	
 	public static void main(String args[]) {
