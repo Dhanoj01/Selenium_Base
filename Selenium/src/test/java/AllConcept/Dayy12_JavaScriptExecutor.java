@@ -55,9 +55,10 @@ public class Dayy12_JavaScriptExecutor {
 
 
 	        // ================= Enter Text Using JavaScript =================
-
+            //Interview question : can we enter text without sendKeys ?
+	        
 	        WebElement input =
-	                driver.findElement(By.id("username"));
+	                driver.findElement(By.id("username")); 
 
 	        js.executeScript(
 	                "arguments[0].value='Dhanoj';",
