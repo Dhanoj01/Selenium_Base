@@ -33,7 +33,7 @@ public class Dayy13_ScreenShot {
                 StandardCopyOption.REPLACE_EXISTING);
 
         System.out.println("Screenshot Taken Successfully");
-
+        
         driver.quit();
     }
 }
