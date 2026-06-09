@@ -27,32 +27,32 @@ public class Dayy19_BrokenLinks {
         // Iterate through each link
         for (WebElement link : links) {
 
-            // Get href attribute value
+            // 1. Get href attribute value
             String url = link.getAttribute("href");
 
-            // Skip if href is null or empty
+            // 2.Skip if href is null or empty
             if (url == null || url.isEmpty()) {
                 continue;
             }
 
-            // Create URL object
+            // 3.Create URL object
             URL linkUrl = new URL(url);
 
-            // Open connection
+            // 4.Open connection
             HttpURLConnection conn =
                     (HttpURLConnection) linkUrl.openConnection();
 
-            // Send HEAD request
+            // 5.Send HEAD request
             // HEAD fetches only response headers
             conn.setRequestMethod("HEAD");
 
-            // Establish connection
+            // 6.Establish connection
             conn.connect();
 
-            // Get HTTP response code
+            // 7.Get HTTP response code
             int responseCode = conn.getResponseCode();
 
-            // Check whether link is broken
+            // 8.Check whether link is broken
             if (responseCode >= 400) {
 
                 System.out.println(
