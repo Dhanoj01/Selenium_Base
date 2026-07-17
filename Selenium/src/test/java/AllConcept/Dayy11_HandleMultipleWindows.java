@@ -12,7 +12,7 @@ public class Dayy11_HandleMultipleWindows {
 	{
 		WebDriver driver = new ChromeDriver();
 
-        driver.get("https://example.com");
+        driver.get("https://google.com");
 
 
 
@@ -26,7 +26,7 @@ public class Dayy11_HandleMultipleWindows {
 
 
      // Open new tab
-        driver.switchTo().newWindow(WindowType.TAB);
+        driver.switchTo().newWindow(WindowType.TAB);       
 
         driver.get("https://youtube.com");
 
