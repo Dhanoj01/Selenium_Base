@@ -1,5 +1,7 @@
 package AllConcept;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -73,6 +75,17 @@ public class Day7_MouseActions {
 
         act.release().perform();
 
+        
+        //Hover menu then sub-menu then click
+        
+        WebElement mainMenu= driver.findElement(null);
+        WebElement subMenu = driver.findElement(null);
+        
+        act.moveToElement(mainMenu)
+        .pause(Duration.ofMillis(500))
+        .moveToElement(subMenu)
+        .click()
+        .perform();
 
 
         driver.quit();
